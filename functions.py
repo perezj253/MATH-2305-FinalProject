@@ -50,6 +50,17 @@ def is_spanning(graph, subgraph):
         
 
 def possible_edges(G, T):
+    """
+    Parameters
+    ----------
+    G: graph()
+        user specified graph
+    T: graph()
+        Minimum spanning tree of the user specified weighted graph
+    Returns
+    -------
+    list of possible edges
+    """
     list(G.edges(V(T)))
     return [e for e in list(G.edges(V(T))) 
              if e[0] not in V(T) or e[1] not in V(T)]
