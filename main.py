@@ -33,7 +33,7 @@ while valid_vector:
         
 show_steps = False
 
-user_input = input("Would you like to see the steps? (yes) or (no)")
+user_input = input("Would you like to see the steps? (yes) or (no): ")
 
 if user_input.lower() == "yes":
     show_steps = True
